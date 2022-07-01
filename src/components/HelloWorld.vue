@@ -6,7 +6,7 @@
     let tasks = ref([]) // interface Task { id: number, title: string, description, date: Date, completed: false }
 
     let task = ref({
-        id: tasks.length,
+        id: tasks.value.length,
         title: '',
         description: '',
         dueDate: '',
@@ -16,7 +16,7 @@
     const createTask = () => {
         tasks.value.push(task.value)
         task.value = {
-            id: tasks.length,
+            id: tasks.value.length,
             title: '',
             description: '',
             dueDate: '',
@@ -41,7 +41,7 @@
 
         <div>
             <h1>Create Task</h1>
-            <input type="text" v-model="task.title" minlength="1">
+            <input type="text" v-model="task.title">
             <input type="text" v-model="task.description">
             <input type="date" v-model="task.dueDate">
             <button @click="createTask">Create</button>
@@ -54,7 +54,7 @@
 
             <div class="tasks" v-for="t in tasks" >
                 <div class="task" v-if="t.completed === false">
-                    <input type="text" length="1" v-model="t.title" minlength="1">
+                    <input type="text" length="1" v-model="t.title">
                     <input type="text" v-model="t.description">
                     <input type="date" v-model="t.dueDate">
                     <input type="checkbox" v-model="t.completed">
@@ -70,7 +70,7 @@
 
             <div class="tasks" v-for="t in tasks" >
                 <div class="task" v-if="t.completed === true">
-                    <input type="text" v-model="t.title" minlength="1">
+                    <input type="text" v-model="t.title">
                     <input type="text" v-model="t.description">
                     <input type="date" v-model="t.dueDate">
                     <input type="checkbox" v-model="t.completed">
