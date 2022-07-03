@@ -2,11 +2,15 @@
 Dummy web application for registering your tasks.
 
 ## Getting started
-1. Install the project dependencies
+1. Install yarn
+```bash
+npm i --global yarn
+```
+2. Install the project dependencies
 ```bash
 yarn install
 ```
-2. Run it locally
+3. Run it locally
 ```bash
 yarn dev
 ```
