@@ -16,6 +16,6 @@ yarn dev
 ```
 
 ## Next steps
-- [ ] Create database using PostgreSQL
+- [X] Create database using PostgreSQL
 - [ ] Create backend using Ruby on Rails to access and manipulate the database
-- [ ] Deploy backend to Amazon Web Services
+- [ ] Deploy backend and database to Amazon Web Services
