@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Vue Todo List
+Dummy web application for registering your tasks.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Getting started
+1. Install the project dependencies
+```bash
+yarn install
+```
+2. Run it locally
+```bash
+yarn dev
+```
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Next steps
+1. Create database using PostgreSQL
+2. Create backend using Ruby on Rails to access and manipulate the database
+3. Deploy backend to Amazon Web Services
